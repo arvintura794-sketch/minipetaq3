@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3B2675"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Top Navigation Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="12dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/img"
+                android:contentDescription="Logo"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Home / Dashboard"
+                android:textColor="#3B2675"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile ▾"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- White Content Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Weekly Chart Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp">
+
+                <!-- Monday -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="10dp">
+                    <TextView android:layout_width="75dp" android:layout_height="wrap_content" android:text="Monday" android:textSize="11sp" android:textColor="#888888" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                        <View android:layout_width="150dp" android:layout_height="4dp" android:background="#3366FF" android:layout_marginBottom="2dp"/>
+                        <View android:layout_width="100dp" android:layout_height="4dp" android:background="#FF3333"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Tuesday -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="10dp">
+                    <TextView android:layout_width="75dp" android:layout_height="wrap_content" android:text="Tuesday" android:textSize="11sp" android:textColor="#888888" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                        <View android:layout_width="160dp" android:layout_height="4dp" android:background="#3366FF" android:layout_marginBottom="2dp"/>
+                        <View android:layout_width="220dp" android:layout_height="4dp" android:background="#FF3333"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Wednesday -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="10dp">
+                    <TextView android:layout_width="75dp" android:layout_height="wrap_content" android:text="Wednesday" android:textSize="11sp" android:textColor="#888888" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                        <View android:layout_width="90dp" android:layout_height="4dp" android:background="#3366FF" android:layout_marginBottom="2dp"/>
+                        <View android:layout_width="130dp" android:layout_height="4dp" android:background="#FF3333"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Thursday -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="10dp">
+                    <TextView android:layout_width="75dp" android:layout_height="wrap_content" android:text="Thursday" android:textSize="11sp" android:textColor="#888888" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                        <View android:layout_width="220dp" android:layout_height="4dp" android:background="#3366FF" android:layout_marginBottom="2dp"/>
+                        <View android:layout_width="240dp" android:layout_height="4dp" android:background="#FF3333"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Friday -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                    <TextView android:layout_width="75dp" android:layout_height="wrap_content" android:text="Friday" android:textSize="11sp" android:textColor="#888888" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                        <View android:layout_width="40dp" android:layout_height="4dp" android:background="#3366FF" android:layout_marginBottom="2dp"/>
+                        <View android:layout_width="110dp" android:layout_height="4dp" android:background="#FF3333"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Table Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:background="#E0E0E0"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="10dp"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:text="User"
+                    android:textColor="#333333"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:text="Item"
+                    android:textColor="#333333"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Row 1: Luna Valeria -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingVertical="8dp">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.2" android:orientation="horizontal" android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="8dp"
+                        android:contentDescription="Avatar"
+                        android:src="@drawable/img" />
+
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Luna Valeria" android:textSize="11sp" android:textStyle="bold" android:textColor="#000000"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="New | Registered: July 22, 2026" android:textSize="8.5sp" android:textColor="#666666"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.8" android:orientation="horizontal" android:gravity="center_vertical">
+                    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/img" android:layout_marginEnd="6dp" android:contentDescription="Item"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pilot G tech 0.4" android:textSize="9.5sp" android:textColor="#333333"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EFEFEF"/>
+
+            <!-- Row 2: Ashianna Kim Fernandez -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingVertical="8dp">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.2" android:orientation="horizontal" android:gravity="center_vertical">
+                    <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/img" android:layout_marginEnd="8dp" android:contentDescription="Avatar"/>
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ashianna Kim Fernandez" android:textSize="11sp" android:textStyle="bold" android:textColor="#000000"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Recently | Registered: July 13, 2026" android:textSize="8.5sp" android:textColor="#666666"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.8" android:orientation="horizontal" android:gravity="center_vertical">
+                    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/img" android:layout_marginEnd="6dp" android:contentDescription="Item"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Valeria small claw clip" android:textSize="9.5sp" android:textColor="#333333"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EFEFEF"/>
+
+            <!-- Row 3: Amora Elyse Ledezma -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingVertical="8dp">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.2" android:orientation="horizontal" android:gravity="center_vertical">
+                    <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/img" android:layout_marginEnd="8dp" android:contentDescription="Avatar"/>
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Amora Elyse Ledezma" android:textSize="11sp" android:textStyle="bold" android:textColor="#000000"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Recently | Registered: July 10, 2026" android:textSize="8.5sp" android:textColor="#666666"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.8" android:orientation="horizontal" android:gravity="center_vertical">
+                    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/img" android:layout_marginEnd="6dp" android:contentDescription="Item"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Atomic Habits book" android:textSize="9.5sp" android:textColor="#333333"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EFEFEF"/>
+
+            <!-- Row 4: Sebastian Vincent Camero -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingVertical="8dp">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.2" android:orientation="horizontal" android:gravity="center_vertical">
+                    <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/img" android:layout_marginEnd="8dp" android:contentDescription="Avatar"/>
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sebastian Vincent Camero" android:textSize="11sp" android:textStyle="bold" android:textColor="#000000"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Recently | Registered: July 10, 2026" android:textSize="8.5sp" android:textColor="#666666"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.8" android:orientation="horizontal" android:gravity="center_vertical">
+                    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/img" android:layout_marginEnd="6dp" android:contentDescription="Item"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Grey face towel" android:textSize="9.5sp" android:textColor="#333333"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EFEFEF"/>
+
+            <!-- Row 5: Samantha Maureen Vera -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingVertical="8dp">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.2" android:orientation="horizontal" android:gravity="center_vertical">
+                    <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/img" android:layout_marginEnd="8dp" android:contentDescription="Avatar"/>
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Samantha Maureen Vera" android:textSize="11sp" android:textStyle="bold" android:textColor="#000000"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Old | Registered: June 26, 2026" android:textSize="8.5sp" android:textColor="#666666"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.8" android:orientation="horizontal" android:gravity="center_vertical">
+                    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/img" android:layout_marginEnd="6dp" android:contentDescription="Item"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cartier classic love bracelet" android:textSize="9.5sp" android:textColor="#333333"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EFEFEF"/>
+
+            <!-- Row 6: Avianna Rye Diaz -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingVertical="8dp">
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.2" android:orientation="horizontal" android:gravity="center_vertical">
+                    <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/img" android:layout_marginEnd="8dp" android:contentDescription="Avatar"/>
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Avianna Rye Diaz" android:textSize="11sp" android:textStyle="bold" android:textColor="#000000"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Old | Registered: June 15, 2026" android:textSize="8.5sp" android:textColor="#666666"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.8" android:orientation="horizontal" android:gravity="center_vertical">
+                    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/img" android:layout_marginEnd="6dp" android:contentDescription="Item"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pilot G tech 0.4" android:textSize="9.5sp" android:textColor="#333333"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
