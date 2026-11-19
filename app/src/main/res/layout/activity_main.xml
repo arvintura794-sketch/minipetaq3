@@ -38,11 +38,16 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/tvProfile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Profile ▾"
                 android:textColor="#666666"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground"
+                android:padding="4dp" />
         </LinearLayout>
 
         <!-- White Content Container -->
@@ -137,7 +142,7 @@
             </LinearLayout>
 
             <!-- Row 1: Luna Valeria -->
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingVertical="8dp">
+            <LinearLayout android:id="@+id/row1" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingVertical="8dp" android:clickable="true" android:focusable="true" android:background="?attr/selectableItemBackground">
                 <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.2" android:orientation="horizontal" android:gravity="center_vertical">
 
                     <ImageView
@@ -160,7 +165,7 @@
             <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EFEFEF"/>
 
             <!-- Row 2: Ashianna Kim Fernandez -->
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingVertical="8dp">
+            <LinearLayout android:id="@+id/row2" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingVertical="8dp" android:clickable="true" android:focusable="true" android:background="?attr/selectableItemBackground">
                 <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.2" android:orientation="horizontal" android:gravity="center_vertical">
                     <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/img" android:layout_marginEnd="8dp" android:contentDescription="Avatar"/>
                     <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
@@ -176,7 +181,7 @@
             <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EFEFEF"/>
 
             <!-- Row 3: Amora Elyse Ledezma -->
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingVertical="8dp">
+            <LinearLayout android:id="@+id/row3" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingVertical="8dp" android:clickable="true" android:focusable="true" android:background="?attr/selectableItemBackground">
                 <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.2" android:orientation="horizontal" android:gravity="center_vertical">
                     <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/img" android:layout_marginEnd="8dp" android:contentDescription="Avatar"/>
                     <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
@@ -192,7 +197,7 @@
             <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EFEFEF"/>
 
             <!-- Row 4: Sebastian Vincent Camero -->
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingVertical="8dp">
+            <LinearLayout android:id="@+id/row4" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingVertical="8dp" android:clickable="true" android:focusable="true" android:background="?attr/selectableItemBackground">
                 <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.2" android:orientation="horizontal" android:gravity="center_vertical">
                     <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/img" android:layout_marginEnd="8dp" android:contentDescription="Avatar"/>
                     <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
@@ -208,7 +213,7 @@
             <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EFEFEF"/>
 
             <!-- Row 5: Samantha Maureen Vera -->
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingVertical="8dp">
+            <LinearLayout android:id="@+id/row5" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingVertical="8dp" android:clickable="true" android:focusable="true" android:background="?attr/selectableItemBackground">
                 <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.2" android:orientation="horizontal" android:gravity="center_vertical">
                     <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/img" android:layout_marginEnd="8dp" android:contentDescription="Avatar"/>
                     <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
@@ -224,7 +229,7 @@
             <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EFEFEF"/>
 
             <!-- Row 6: Avianna Rye Diaz -->
-            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingVertical="8dp">
+            <LinearLayout android:id="@+id/row6" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingVertical="8dp" android:clickable="true" android:focusable="true" android:background="?attr/selectableItemBackground">
                 <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.2" android:orientation="horizontal" android:gravity="center_vertical">
                     <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/img" android:layout_marginEnd="8dp" android:contentDescription="Avatar"/>
                     <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
